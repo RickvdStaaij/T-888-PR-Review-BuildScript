@@ -1,0 +1,19 @@
+{
+  "name": "FuturePortal/T-888-PR-Review-BuildScript",
+  "description": "The T-888 build script makes sure your build results get send to the T-888 review server",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "T-888\\": "T-888/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "~5"
+  },
+  "authors": [
+    {
+      "name": "Rick van der staaij",
+      "email": "info@rickvanderstaaij.nl"
+    }
+  ]
+}
