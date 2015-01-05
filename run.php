@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 
 $phpCsFile = 'dev/reports/checkstyle.xml';
 if (file_exists($phpCsFile)) {
-    $phpCsXml = require $phpCsFile;
+    $phpCsXml = file_get_contents($phpCsFile);
     $phpcs = json_encode((array) simplexml_load_string($phpCsXml));
 } else {
     $phpcs = json_encode([]);
